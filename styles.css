@@ -1,17 +1,28 @@
 * {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton', sans-serif;]
+  box-sizing: border-box;
 }
 
 #container {
-  margin: 0 auto;
-  display: table;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 1%;
 }
 
 .dash-list {
-  display: inline;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .inline {
   display: inline;
   padding: 5%;
+}
+
+.nikeLogo {
+  width: 3%;
+  position: absolute;
+  top: 2%;
+  left: 3%;
 }

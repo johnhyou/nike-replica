@@ -13,6 +13,8 @@ function createDashBoard() {
   var $customize = document.createElement('li')
   var $search = document.createElement('div')
 
+  $nikeLogo.setAttribute('src', 'nikelogo.jpg')
+  $nikeLogo.classList.add('nikeLogo')
 
   $men.classList.add('inline')
   $women.classList.add('inline')
@@ -40,6 +42,7 @@ function createDashBoard() {
   $options.appendChild($customize)
 
   $container.setAttribute('id', 'container')
+  $container.appendChild($nikeLogo)
   $container.appendChild($options)
 
   $dashboard.appendChild($container)
