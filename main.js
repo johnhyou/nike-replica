@@ -82,7 +82,7 @@ createDashBoard()
 
 
 var $options = document.querySelector('#options')
-$options.addEventListener('click', function() {
+$options.addEventListener('mouseover', function() {
   var $popup = document.createElement('div')
   var $type = document.createElement('h3')
   var $selections = document.createElement('ul')
@@ -92,4 +92,9 @@ $options.addEventListener('click', function() {
   $popup.appendChild($selections)
 
   $options.appendChild($popup)
+
+  $popup.innerHTML = ''
+  $popup.addEventListener('mouseout', function() {
+    $popup.style.display = 'none'
+  })
 })
