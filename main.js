@@ -93,8 +93,7 @@ $options.addEventListener('mouseover', function() {
 
   $options.appendChild($popup)
 
-  $popup.innerHTML = ''
-  $popup.addEventListener('mouseout', function() {
+  $options.addEventListener('mouseout', function() {
     $popup.style.display = 'none'
   })
 })
